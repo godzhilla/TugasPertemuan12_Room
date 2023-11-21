@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#abd1d1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Add Assignment"
+            android:textStyle="bold"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="#f1f7b5"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_container"
+        android:padding="20dp"
+        android:hint="Title"
+        android:layout_marginTop="40dp"
+        android:id="@+id/add_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_container"
+        android:padding="20dp"
+        android:hint="Description"
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_desc"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/rounded_container"
+        android:padding="20dp"
+        android:hint="Due date"
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_deadline"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_rounded_container"
+        android:text="Save"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:id="@+id/btn_save_add"/>
+
+</LinearLayout>

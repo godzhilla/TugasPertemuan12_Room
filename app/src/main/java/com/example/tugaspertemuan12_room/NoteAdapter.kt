@@ -9,7 +9,7 @@ typealias OnClickUpdate = (Note) -> Unit
 typealias OnClickDelete = (Note) -> Unit
 
 class NoteAdapter (
-    private val listNote : List<Note>, private val onClickUpdate: OnClickUpdate,private val onClickDelete: OnClickDelete
+    private val listNote : MutableList<Note>, private val onClickUpdate: OnClickUpdate,private val onClickDelete: OnClickDelete
 ) : RecyclerView.Adapter<NoteAdapter.ItemListViewHolder>() {
     inner class ItemListViewHolder(private val binding: ItemListBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(data: Note){
